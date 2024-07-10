@@ -1,0 +1,8 @@
+<h1>AUTH FORM</h1>
+
+<form>
+  <input type="text" placeholder="login" [(ngModel)]="model.login" name="login">
+  <input type="text" placeholder="password" [(ngModel)]="model.password" name="password">
+
+  <mrx-button (mrxClick)="loginForm()">login</mrx-button>
+</form>

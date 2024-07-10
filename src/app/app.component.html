@@ -1,0 +1,32 @@
+<header>
+  <ul>
+    <li>
+      <a routerLink="/">MYRTEX</a>
+    </li>
+    <li>
+      <a routerLink="/profile">PROFILE</a>
+    </li>
+  </ul>
+
+  <span *ngIf="(isLoading$ | async); else controlsTemplate">Loading</span>
+
+  <ng-template #controlsTemplate>
+    <a routerLink="/login" *ngIf="!user.login; else userTemplate">Login</a>
+
+    <ng-template #userTemplate>
+      <div class="user">
+        <mrx-button (mrxClick)="logout()">Logout</mrx-button>
+        <div class="user-name">{{user.login}}</div>
+        <div class="user-avatar"></div>
+      </div>
+    </ng-template>
+  </ng-template>
+</header>
+
+<main>
+  <router-outlet />
+
+  <mrx-input-file></mrx-input-file>
+</main>
+
+<footer></footer>

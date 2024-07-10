@@ -1,0 +1,9 @@
+{
+  "profile-module": {
+    "remoteEntry": "http://localhost:4201/remoteEntry.js",
+    "exposedModule": "./Module",
+    "displayName": "Profile",
+    "routePath": "profile",
+    "ngModuleName": "ProfilePageModule"
+  }
+}

@@ -1,0 +1,54 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+header {
+  height: 48px;
+  background-color: beige;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  ul {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+
+    &-avatar {
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      background-color: blueviolet;
+    }
+
+    &-name {
+
+    }
+  }
+}
+
+footer {
+  height: 200px;
+  background-color: beige;
+}
+
+main {
+  flex-grow: 1;
+  padding: 24px;
+}
