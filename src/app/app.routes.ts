@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { loadRemoteModule } from '@angular-architects/module-federation';
 
 export const APP_ROUTES: Routes = [
-  {path: 'login', loadChildren: () => import('./modules/login/login.module').then((m) => m.LoginModule)},
+  // {path: 'login', loadChildren: () => import('./modules/login/login.module').then((m) => m.LoginModule)},
   // {
   //   path: 'profile',
   //   loadChildren: () => loadRemoteModule({
