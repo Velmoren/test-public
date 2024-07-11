@@ -114,7 +114,17 @@
 						],
 						"scripts": []
 					}
-				}
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "buildTarget": "myrtex-mf:build:production",
+            "repo": "https://github.com/Velmoren/test-public.git",
+            "dir": "dist/myrtex-mf/",
+            "baseHref": "/test-public/",
+            "noNojekyll": true
+          }
+        }
 			}
 		},
     "auth-lib": {

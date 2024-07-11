@@ -1,13 +1,13 @@
 {
   "login-module": {
-    "remoteEntry": "http://localhost:4201/remoteEntry.js",
+    "remoteEntry": "https://velmoren.github.io/test-identity/remoteEntry.js",
     "exposedModule": "./Module",
     "displayName": "Login",
     "routePath": "login",
     "ngModuleName": "LoginPageModule"
   },
   "profile-module": {
-    "remoteEntry": "http://localhost:4202/remoteEntry.js",
+    "remoteEntry": "https://velmoren.github.io/test-profile/remoteEntry.js",
     "exposedModule": "./Module",
     "displayName": "Profile",
     "routePath": "profile",

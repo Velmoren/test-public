@@ -10,6 +10,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { EFFECTS } from './store/app.effects';
 import { appReducer } from './store/app.reducer';
 import { AuthModule } from '@auth-lib';
+import { APP_BASE_HREF } from '@angular/common';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -21,6 +22,7 @@ export const appConfig: ApplicationConfig = {
       StoreRouterConnectingModule.forRoot(),
       StoreDevtoolsModule.instrument(),
       EffectsModule.forRoot(EFFECTS),
-    )
+    ),
+    {provide: APP_BASE_HREF, useValue: '/test-public/'}
   ]
 };
